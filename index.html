@@ -9,32 +9,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
+  <!-- This is the navigation bar at the top -->
   <body>
     <header class="header">
       <nav class="nav_bar">
         <img src="static/media/logo.png" class="nav__logo" id="logo" />
         <ul class="nav_bar__links">
           <li class="nav_bar__item">
-            <a class="nav_bar__link" href="#section--1">About Me</a>
+            <a class="nav_bar__link" name="section--1">About Me</a>
           </li>
           <li class="nav_bar__item">
-            <a class="nav_bar__link" href="#section--2">Resume</a>
+            <a class="nav_bar__link" name="section--2">Contact Me</a>
           </li>
-          <li class="nav_bar__item">
-            <a class="nav_bar__link" href="#section--3">Contact Me</a>
-          </li>
+          <!-- <li class="nav_bar__item">
+            <a class="nav_bar__link" name="section--3">Contact Me</a>
+          </li> -->
         </ul>
       </nav>
-
-      <div class="header__title">
-        <h1 class="intro">
-          Hi, I'm Vitaliy<br />
-          <span style="font-size: 2rem">I am a software engineer. </span>
-        </h1>
-
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-        <img src="static/media/Front_photo.jpg" class="header__img" />
-      </div>
     </header>
+    <!-- This is the intro section -->
+    <section class="intro__title">
+      <h1 class="intro">
+        Hi, I'm Vitaliy<br />
+        <span style="font-size: 2rem">I am a software engineer. </span>
+      </h1>
+      <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      <!-- Front page image -->
+      <img src="static/media/Front_photo.jpg" class="intro__img" />
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="section--1">
+      <div class="section__container">
+        About me
+        <h3 class="section__organizer">Origin</h3>
+        <h2 class="section__description">
+          I was born in Chernivitsi, Ukraine (fun fact, Mila Kunis was also born there). When I was 5 years old my family and I moved to the US and we have been living in Washington state ever since. (Isn't it neat how the Python logo has the same color scheme as the Ukrainian flag!)
+          </br></br>
+        </h2>
+        <h3 class="section__organizer">Education</h3>
+        <h2 class="section__description">
+          I am a first generation college graduate and have recently completed my degree in Computer Science at Washington State University. I pursued CS because I've always enjoyed making, breaking, and fixing things, and have been captivated by computers and technology since childhood.
+          Through my four year experience at college, I have had my eyes opened to a whole new world of innovation and creativity. Although I've graduated now, I haven't stopped learning. I have recently taken a Python class and a JavaScript class on Udemy. The JavaScript class in particular, has come in handy for building this portfolio website.
+          
+         
+        </br></br>
+        </h2>
+        <h3 class="section__organizer">Hobbies </h3>
+        <h2 class="section__description">
+          High school and college introduced me to a whole slew of hobbies that I currently enjoy to this day.
+        </br></br>Chess: In highschool I was president of the Chess club and would spend most of my lunch breaks beating my teachers.
+        </br></br>Volleyball: At Clark college, I took a volleyball class and played volleyball for the first time ever in my life. I immediately fell in love with the sport and have now been playing for about 7 years.
+          Clark college volleyball intramurals was also where I met my lovely wife Emma, who is also a very strong volleyball player.
+          Since starting the sport, I have participated in and won a few men's doubles and also reverse-coed doubles tournaments alongside my wife in the Vancouver/Portland area.
+        </br></br>Table Tennis: Washington State University was where I was introduced to Table Tennis and eventually ended up forming the WSU Table Tennis Club with a few friends.
+        As a club we held a few recreational tournaments and I thoroughly enjoyed playing in them and winning a few.
+        </br></br> Down below is a slider with some highlights from my hobbies.
+        </h2>
+      </div>
+      <!-- Photos -->
+      <div class="slider">
+        <div class="slide">
+          <img src="static/media/Front_photo_2.jpg" alt="Photo 1" />
+        </div>
+
+        <div class="slide">
+          <img src="static/media/Front_photo_3.jpg" alt="Photo 2" />
+        </div>
+
+        <div class="slide">
+          <img src="static/media/Front_photo_4.jpg" alt="Photo 3" />
+        </div>
+
+        <div class="slide">
+          <img src="static/media/Front_photo_5.jpg" alt="Photo 4" />
+        </div>
+
+        <div class="slide">
+          <img src="static/media/Front_photo_6.jpg" alt="Photo 4" />
+        </div>
+
+        <!-- Slider buttons -->
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <!-- Clickable slider dots -->
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section" id="section--2">
+      <div class="section__container">
+        Contact Me</br>
+        <!-- <img src="static/media/Resume.jpg" alt="Contact Me"/> -->
+        </div>
+
+    </section>
   </body>
 </html>
