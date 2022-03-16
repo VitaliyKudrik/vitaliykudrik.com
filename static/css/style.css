@@ -111,12 +111,12 @@ h1 {
   padding: 5rem 3rem;
   padding-bottom: 15rem;
   border-top: 1px solid #ddd;
-
+  position: relative;
   transition: transform 1s, opacity 1s;
 }
 
 #section--1 {
-  margin-bottom: -40%;
+  margin-bottom: -35%;
 }
 
 .section__organizer {
@@ -213,4 +213,48 @@ h1 {
 
 .dots__dot--active {
   background-color: #fff;
+}
+
+/* Contact Me form */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(68, 67, 67);
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+.container {
+  padding: 20px;
+  font-size: 2.5rem;
+}
+
+a:visited {
+  color: rgb(68, 67, 67);
+}
+
+input {
+  font-size: 1rem;
+}
+
+textarea {
+  font-size: 1rem;
 }

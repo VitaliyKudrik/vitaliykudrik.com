@@ -8,16 +8,18 @@ const sliderLeftBtn = document.querySelector(".slider__btn--left");
 const sliderRightBtn = document.querySelector(".slider__btn--right");
 const dotContainer = document.querySelector(".dots");
 const btnScrollTo = document.querySelector(".btn--scroll-to");
+// Section elements
 const section1 = document.querySelector("#section--1");
 const section2 = document.querySelector("#section--2");
 const section3 = document.querySelector("#section--3");
+
 // Dealing with the nav bar
 const navHandler = function (e) {
   // Get all the links on nav bar
   if (e.target.classList.contains("nav_bar__link")) {
     // Current link
     const link = e.target;
-    // Make the nav bar buttons smooth scroll to correct location
+    // Make the nav bar "buttons" smooth scroll to correct location
     link.addEventListener("click", function () {
       if (link.getAttribute("name").at(-1) === "1") {
         section1.scrollIntoView({ behavior: "smooth" });
@@ -42,7 +44,6 @@ const navHandler = function (e) {
 nav.addEventListener("mouseover", navHandler.bind(0.25));
 nav.addEventListener("mouseout", navHandler.bind(1));
 
-///////////////////////////////////////
 // Button scrolling
 btnScrollTo.addEventListener("click", function (e) {
   section1.scrollIntoView({ behavior: "smooth" });
